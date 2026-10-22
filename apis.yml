@@ -1,23 +1,103 @@
 aid: scentre-group
+
 name: Scentre Group
-description: 'Scentre Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Scentre Group owns and operates 42 Westfield destinations in Australia and New Zealand,
+  with the stated purpose of "creating extraordinary places and experiences that connect, enrich and
+  are essential to our communities". The group was established in 2014 and offers business solutions
+  for brands and retailers reaching Westfield customers, including the Westfield Marketing Hub at
+  partner.scentregroup.com. It also publishes investor, sustainability and newsroom information. Surfaced
+  via the API Evangelist harvest backlog (source australia-apidays-2026). No public API, developer portal
+  or API documentation was found on its sites.
+
+image: https://avatars.githubusercontent.com/scentregroup
+
 url: https://raw.githubusercontent.com/api-evangelist/scentre-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Retail
+- Shopping Centres
+- Real Estate
+- Westfield
+- Australia
+- New Zealand
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/scentre-group-hosts.yml
+- type: Vendors
+  url: vendors/scentre-group-vendors.yml
+- type: Pricing
+  url: https://www.scentregroup.com/news-and-media/latest-news/plans-to-re-open-westfield-bondi-to-the-community
+- type: DomainSecurity
+  url: security/scentre-group-domain-security.yml
 - type: Website
-  url: https://scentregroup.com/
+  url: https://www.scentregroup.com/
+- type: Newsroom
+  url: https://www.scentregroup.com/news-and-media
+- type: Support
+  url: https://www.scentregroup.com/contact-us
+- type: Portal
+  url: https://partner.scentregroup.com/
+  description: Westfield Marketing Hub, a portal where businesses promote themselves across the Westfield ecosystem (a marketing portal, not an API developer portal).
+- type: TermsOfService
+  url: https://www.scentregroup.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.westfield.com.au/privacy-policy
+  description: National Website Privacy Policy, linked from the scentregroup.com footer.
+- type: GitHubOrganization
+  url: https://github.com/scentregroup
+- type: LinkedIn
+  url: https://www.linkedin.com/company/scentre-group/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity checked against the company's own site, whose homepage title is "Home - Scentre Group".
+    A plain curl gets a 403 edge challenge on subpages, but they return 200 to a browser fetch, so they count as live.
+    The preflight's Pricing site_link was a news article and was left out. No API surface was found.
+  evidence:
+  - url: https://www.scentregroup.com/
+    status: 200
+  - url: https://www.scentregroup.com/news-and-media
+    status: 200
+  - url: https://www.scentregroup.com/contact-us
+    status: 200
+  - url: https://partner.scentregroup.com/
+    status: 200
+  - url: https://www.scentregroup.com/terms-of-use
+    status: 200
+  - url: https://www.westfield.com.au/privacy-policy
+    status: 200
+  - url: https://github.com/scentregroup
+    status: 200
+  - url: https://www.linkedin.com/company/scentre-group/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

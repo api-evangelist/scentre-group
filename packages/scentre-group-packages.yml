@@ -1,0 +1,18 @@
+name: Scentre Group packages
+generated: '2026-10-22'
+method: none
+source: https://github.com/scentregroup
+note: >-
+  Scentre Group publishes no public API, so it has no first-party API client libraries. Checked on 2026-10-22:
+  the GitHub org scentregroup (46 repos, mostly forks and internal tooling such as rubocop-cops, cf-graphql,
+  helm-mirror and wsdl-to-ts), an npm search for "scentre" (0 results), PyPI "scentre" (404), and RubyGems.
+  RubyGems does carry westfield_paginator 1.0.7 (2017-06-14), datetime_helper 1.0.5 (2015-06-19) and
+  westfield_swagger 1.2.6 (2017-06-13). All three are general Ruby utilities, not API clients, and their homepages
+  are github.com/westfieldlabs. That is the Westfield Labs org, whose tie to Scentre Group was not confirmed, so they
+  are left out.
+checked:
+- https://api.github.com/orgs/scentregroup/repos
+- https://registry.npmjs.org/-/v1/search?text=scentre
+- https://pypi.org/pypi/scentre/json
+- https://rubygems.org/api/v1/search.json?query=westfield
+packages: []

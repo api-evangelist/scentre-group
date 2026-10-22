@@ -1,0 +1,81 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.westfield.com.au/privacy-policy
+note: >-
+  Scentre Group (owner/operator of Westfield in Australia and New Zealand) links its privacy policy from
+  scentregroup.com to the Westfield National Website Privacy Policy. Its Terms of Use page
+  (https://www.scentregroup.com/terms-of-use, HTTP 200, 2026-10-22) contains no regulatory-signal language.
+  The privacy policy has no breach-notification commitment: its one "incidents" passage is about physical
+  safety and security incidents at shopping centres, so incident_notification is not recorded. It makes no
+  statement on AI, automated decision-making, Global Privacy Control / Do Not Track, children or subprocessor lists.
+signals:
+  data_subject_request:
+    url: https://www.westfield.com.au/privacy-policy
+    section: 'Getting in touch - Right of access to and correction of your information'
+    rights_named: [access, update, correction]
+    channel: Privacy Officer, Scentre Group (by email or post), or the relevant shopping centre manager
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You have rights to access, update and correct your personal information held by us. We will take
+        reasonable steps to ensure that personal information is up-to-date, accurate and complete.
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you reasonably believe that there has been unauthorised use or disclosure of your personal
+        information, or if you wish to access, update or correct your personal information held by us,
+        please contact our Privacy Officer, whose details appear below, or your relevant shopping centre manager.
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you are not satisfied with our response you may refer your complaint to the Office of the
+        Australian Information Commissioner.
+    note: >-
+      Access, update and correction rights are stated, with a named channel (Privacy Officer or centre manager)
+      and escalation to the OAIC. Deletion and portability are not named, and no response time is given.
+  data_retention:
+    url: https://www.westfield.com.au/privacy-policy
+    section: 'How long do we hold your information?'
+    evidence:
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We will keep your personal information for only as long as is necessary to achieve the purpose for
+        which we use and disclose it.
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        2.5. Following cancellation of your membership, Scentre Group may continue to retain certain data in
+        relation to you and your membership (including personal information) for financial reporting, audit
+        and other legal and regulatory compliance purposes (for example with respect to any Digital Gift Card
+        that is associated with your membership).
+    note: >-
+      A purpose-limited retention principle with no fixed periods, and a stated post-cancellation retention
+      for financial, audit and compliance purposes for Westfield membership data.
+  data_residency:
+    url: https://www.westfield.com.au/privacy-policy
+    evidence:
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We may transfer your personal information to others in countries outside Australia and New Zealand
+        (including to those that operate our cloud servers outside of Australia and New Zealand); in connection
+        with our use of Google Analytics on our websites predominantly for performance and analytics purposes
+        and to promote information and content we believe you will be interested in; and for other purposes
+        permitted by law or for which we have sought and obtained your consent.
+    - source: https://www.westfield.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'By providing us with your personal information, you consent to these transfers.'
+    note: >-
+      This is a disclosure that data leaves the region, not a residency commitment: personal information may be
+      transferred outside Australia and New Zealand, including to offshore cloud operators. No destination
+      countries are named.

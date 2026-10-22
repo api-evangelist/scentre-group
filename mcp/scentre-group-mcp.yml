@@ -1,0 +1,20 @@
+name: Scentre Group MCP Server
+description: >-
+  No official Scentre Group (Westfield) MCP server, hosted or packaged, was found, and there
+  is no public OpenAPI contract to derive candidate tools from. This file records that absence.
+generated: '2026-10-22'
+method: none
+source:
+- https://www.scentregroup.com/llms.txt
+- https://www.westfield.com.au/llms.txt
+- https://partner.scentregroup.com/llms.txt
+status: none
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+evidence:
+- 'Web search for a Scentre Group / Westfield MCP server or developer API on 2026-10-22 found nothing from the company. The similarly named scentrev-mcp (api.scentrev.com) is unrelated.'
+- 'Pre-flight contract discovery (2026-10-22) found no OpenAPI, AsyncAPI, GraphQL or MCP surface on www.scentregroup.com, partner.scentregroup.com or www.westfield.com.au. The scentregroup GitHub org has no specs.'
+- 'llms.txt returned HTTP 404 on all three hosts.'

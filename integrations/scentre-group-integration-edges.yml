@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/scentre-group/integrations
+- https://n8n.io/integrations/scentre-group/
+- https://composio.dev/toolkits/scentre-group
+- https://monid.ai/tools/scentre-group
+checked:
+- https://www.scentregroup.com/
+- https://partner.scentregroup.com/
+- https://zapier.com/apps/scentre-group/integrations
+- https://github.com/scentregroup
+- https://composio.dev/toolkits/scentre-group
+- https://monid.ai/tools/scentre-group
+- https://n8n.io/integrations/scentre-group/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No integration marketplace listings, partner pages or API contract were found for Scentre Group. The company
+  has no public API. Its partner.scentregroup.com Westfield Marketing Hub is a marketing portal for retailers, not
+  an integration directory.

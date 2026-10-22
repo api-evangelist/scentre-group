@@ -1,0 +1,94 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 3
+  other_domain: 2
+  platform: 2
+  roles:
+  - api
+  - legal
+  - other
+  - partner
+  - source
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: api.scentregroup.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: scentregroup.com
+  role: api
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: partner.scentregroup.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Portal
+  serves: []
+  registrable_domain: scentregroup.com
+  role: partner
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.scentregroup.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Pricing
+  - Website
+  - Newsroom
+  - Support
+  - TermsOfService
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: scentregroup.com
+  role: website
+  relation: own
+- host: www.westfield.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: westfield.com.au
+  role: legal
+  relation: other-domain
